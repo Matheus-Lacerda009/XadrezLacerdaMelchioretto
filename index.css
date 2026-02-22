@@ -1,0 +1,105 @@
+:root{
+    --cor-quadrados: #505652;
+    --cor-quadrados2: white;
+}
+
+body{
+
+    background-color: rgba(4, 23, 0, 0.815);
+    margin: 0px;
+
+}
+
+#tabuleiro{
+
+    background-color: rgb(51, 31, 0);
+    display: grid;
+    grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr;
+    align-content: center;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    border-radius: 10px;
+    border: 7px outset rgb(6, 4, 0);
+
+}
+
+#container{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.quadradoP{
+
+    width: 65px;
+    height: 65px;
+    background-color: var(--cor-quadrados);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.quadradoB{
+
+    width: 65px;
+    height: 65px;
+    background-color: var(--cor-quadrados2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.pecas{
+
+    height: 60px;
+    width: 60px;
+
+}
+
+#turno{
+    
+    background-color: white;
+    width: 66px;
+    height: 45px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 20vw;
+    border: 3px outset black;
+    text-align: center;
+
+}
+
+.semHitbox{
+    pointer-events: none;
+}
+
+#lanceContador{
+    
+    background-color: white;
+    width: 66px;
+    height: 45px;
+    position: absolute;
+    margin-top: 50vh;
+    margin-left: 75vw;
+    border: 3px outset black;
+    text-align: center;
+
+}
+
+#fantasma{
+
+    position: absolute;
+    width: 65px;
+    height: 65px;
+
+}
