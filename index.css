@@ -103,3 +103,9 @@ body{
     height: 65px;
 
 }
+
+#logo{
+    position: absolute;
+    width: 128px;
+    height: 128px;
+}
