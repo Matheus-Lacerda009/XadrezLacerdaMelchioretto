@@ -90,10 +90,8 @@ function PodeMover(peca, partida,  destino){ //Condição de movimento
             }
         case 'P':
             if(linhaP === 2 && disV === 2 && disH === 0 && peca.classList.contains('B') && destino.childElementCount === 0 && document.getElementById(String(DestNum - 1)).childElementCount === 0){
-                //setGhostPawn
                 return true;
             } else if(linhaP === 7 && disV === 2 && disH === 0 && peca.classList.contains('P') && destino.childElementCount === 0 && document.getElementById(String(DestNum + 1)).childElementCount === 0){
-                //setGhostPawn
                 return true;
             } else if(SdisV === -1 && disH === 0 && peca.classList.contains('P') && destino.childElementCount === 0){
                 return true;
